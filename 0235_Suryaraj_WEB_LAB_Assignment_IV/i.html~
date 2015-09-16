@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+
+<html> 
+
+<head>
+
+<script type="text/javascript">
+
+function startOperation(){		
+		
+        document.write("Testing the alpha-numeric values<br>");		
+		
+		var input = prompt("Please enter any character");
+
+		checkAlphanumeric(input[0]);
+	
+			}
+
+	function checkAlphanumeric(input){
+
+		if((input>='a' && input<='z') ||(input>='A' && input<='Z') ||(input>='0' && input<='9')){
+
+			document.write("The entered input character <b>is an</b> alphanumeric character.");
+
+		}
+
+		else{
+
+			document.write("The entered input character <b>is not an</b> alphanumeric character.");
+
+			}
+
+		}
+
+		</script>
+	
+	</head>
+
+<body>
+	<button onclick="startOperation()">Click Here to start</button>
+
+</body>
+
+</html>

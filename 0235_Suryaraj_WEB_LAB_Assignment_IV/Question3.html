@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+
+<html> 
+
+<head>
+
+<script type="text/javascript">
+
+function startOperation(){		
+		
+                    var gArray = [2,5,9,6,5];
+		
+		    document.write("Given array elements are "+gArray);
+		
+                    var number = Number(prompt("Which element do you want to remove?"));
+		
+		    remove_array_element(gArray,number);
+	      
+                        }
+
+function remove_array_element(gArray,number){		
+	
+		var index = gArray.indexOf(number);
+
+		if(index > -1){
+
+			gArray.splice(index,1);	
+
+			}
+		
+			document.write("<br>Array after removing elements is "+ gArray);
+			
+			}
+		
+		</script>
+	
+	</head>
+
+<body>
+	<button onclick="startOperation()">Click Here to start</button>
+
+</body>
+
+</html>

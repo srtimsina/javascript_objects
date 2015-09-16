@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+
+<html> 
+
+<head>
+
+<script type="text/javascript">
+
+function startOperation(){		
+
+		var initialString = prompt("Please enter a String. ");
+		
+		document.write("The string you entered is " + initialString + "<br><br>");
+	
+		var repeatTime = prompt("How many times do you want to repeat?");
+
+		repeat(initialString,repeatTime);
+	
+		}
+	
+	function repeat(initialString,repeatTime){
+
+		document.write("The required repeated strings are <br>");
+
+		var i = 0;
+
+		for(i = 0; i<repeatTime;i++){
+
+			document.write(initialString);
+	
+			}
+
+		document.write("</h3>");
+	
+}
+		</script>
+	
+	
+	</head>
+
+<body>
+	<button onclick="startOperation()">Click Here to start</button>
+
+</body>
+
+</html>

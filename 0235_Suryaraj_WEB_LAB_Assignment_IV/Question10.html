@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+
+<html> 
+
+<head>
+
+<script type="text/javascript">
+
+function startOperation(){		
+		
+                  document.write("Checking Uppercase");
+		
+		  var input = prompt("Enter any character");
+		
+                  check(input[0]);
+	
+                    }
+
+	function check(input){
+
+		if(input>='A' && input<='Z'){
+
+			document.write("The entered input character <b>is an</b> uppercase character.");
+
+		}
+
+		else{
+
+			document.write("The entered input character <b>is not an</b> uppercase character.");
+
+			}
+
+		}
+		
+		</script>
+	
+	</head>
+
+<body>
+	<button onclick="startOperation()">Click Here to start</button>
+
+</body>
+
+</html>

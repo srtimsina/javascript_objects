@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+
+<html> 
+
+<head>
+
+<script type="text/javascript">
+
+function startOperation(){
+		
+		var x = [7,9,0,-2];
+
+		document.write(x+"<br>");
+
+		var y = prompt("Please enter the number of elements you wish to delete");
+
+		end(x,y);
+
+		}
+
+function end(x,y){		
+
+		var i=0;
+
+		var reverseArray = x.reverse();
+
+		document.write("The elements you choose to remove are");
+
+		for(i=0;i<y;i++){
+
+			if(i==y-1){
+
+					document.write(reverseArray[i]+".");	
+	
+				}
+
+			else{
+					document.write(reverseArray[i]+", ");	
+				}
+			}				
+
+		}
+	
+</script>
+
+</head>
+
+<body>
+
+<button onclick="startOperation()">Click Here to start</button>
+
+</body>
+
+</html>

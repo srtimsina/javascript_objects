@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+
+<html> 
+
+<head>
+
+<script type="text/javascript">
+
+function startOperation(){		
+
+		var myColor=["Red","Green","White","Black"];
+
+		var finalString = myColor.join();
+
+		document.write("The single string of the elements of given array is <b>"+finalString+"</b>");		
+
+			}
+	
+	</script>
+
+</head>
+
+<body>
+	<button onclick="startOperation()">Click Here to join "Red","Green","White","Black"</button>
+
+</body>
+
+</html>

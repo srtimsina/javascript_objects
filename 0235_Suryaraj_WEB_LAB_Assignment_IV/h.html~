@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+
+<html> 
+
+<head>
+
+<script type="text/javascript">
+
+function startOperation(){		
+		
+           var input = prompt("Please enter the date in the following format. (mm/dd/yyyy)");
+		
+		var date = new Date(input);
+
+		document.write("The day is "+date+"<br>");
+
+		yesterday(date);
+	
+		}
+
+	function yesterday(date){
+
+		date.setDate(date.getDate()-1);
+
+		document.write("The day before was "+date );
+	
+		}
+
+		</script>
+	
+	</head>
+
+<body>
+	<button onclick="startOperation()">Click Here to start</button>
+
+</body>
+
+</html>

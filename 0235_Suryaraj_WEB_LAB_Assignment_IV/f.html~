@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+
+<html> 
+
+<head>
+
+<script type="text/javascript">
+
+function startOperation(){		
+	
+		var array = "We are doing some exercises.";
+		
+		document.write("The the given string is "+array); 		
+
+		var insertString = prompt("Enter the string you wanted to insert. ");
+
+		var insertIndex = prompt("Enter the index of the position where you want to insert ");
+
+		insert(array,insertString,insertIndex);
+		
+			}
+	
+	function insert(array,insertString,insertIndex){
+
+		insertString  = insertString+" ";
+
+		document.write("<br>The final string is "+array.substring(0,insertIndex-1)+insertString+array.substring(insertIndex-1));
+	
+		}
+		
+	</script>
+	
+  </head>
+
+<body>
+	<button onclick="startOperation()">Click Here to start</button>
+
+</body>
+
+</html>
